@@ -35,7 +35,6 @@ captive_portal:
 web_server:
   port: 80
 
-# Додаємо явне визначення UART з ID
 uart:
   id: uart_bus
   tx_pin: GPIO17
@@ -43,7 +42,7 @@ uart:
   baud_rate: 9600
   stop_bits: 2
 
-# Додаємо Modbus контролер, щоб мати до нього доступ через lambda
+
 modbus:
   - id: pzem_modbus
     uart_id: uart_bus
@@ -74,7 +73,7 @@ sensor:
       name: "pzem1 Current"
       id: pzem1_current
       filters:
-        - multiply: 1.0 # Тут можна буде додати калібрування пізніше
+        - multiply: 1.0 #here you may insert a correction if needed
     voltage:
       name: "pzem1 Voltage"
       id: pzem1_voltage
@@ -84,4 +83,5 @@ sensor:
     energy:
       name: "pzem1 Energy"
       id: pzem1_energy
-    update_interval: 1s # Зменшив до 1с для точнішого Coulomb Counting
+
+    update_interval: 1s 
