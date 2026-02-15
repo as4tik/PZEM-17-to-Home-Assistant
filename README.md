@@ -17,4 +17,4 @@ Drowback of the PZEM-17 is absence of the direction of the current, whle the cur
 
 <img width="859" height="523" alt="image" src="https://github.com/user-attachments/assets/f0505ad0-f38c-4f34-aeef-30c1a8d33c7e" />
 
-
+Feel free to use [YAML]([url](https://github.com/as4tik/PZEM-17-to-Home-Assistant/blob/main/Pzem_17.YAML))
